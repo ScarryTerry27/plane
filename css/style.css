@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.cont {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    width: 3000px;
+    height: 640px;
+    background-image: url(../img/map.jpeg);
+    background-position: -1300px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: bg 6.5s ease infinite;
+    animation-iteration-count: 1;
+    animation-delay: 4s;
+    
+}
+
+.arrow1 {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 260px;
+    left: 445px;
+    background-image: url(../img/redloc.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: arrow 2s ease infinite;
+    animation-iteration-count: 2;
+}
+
+.arrow2 {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 405px;
+    left: 1140px;
+    background-image: url(../img/bluloc.png);
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: arrow2 6.5s ease infinite;
+    animation-delay: 4s;
+    animation-iteration-count: 1;
+}
+
+.img {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 275px;
+    left: 453px;
+    background-image: url(../img/flight.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: flight 6.5s ease infinite;
+    animation-iteration-count: 1;
+    animation-delay: 4s;
+}
+
+@keyframes flight {
+    0% {
+        width: 10px;
+        height: 10px;
+        top: 260px;
+        left: 445px;
+    }
+    50% {
+        width: 60px;
+        height: 60px;
+        top: 330px;
+        left: 750px;
+        
+    }
+
+    100%{
+        width: 10px;
+        height: 10px;
+        top: 405px;
+        left: 1040px;
+    }
+}
+
+@keyframes arrow {
+    from {
+        width: 0px;
+        height: 0px;
+    }
+
+    to {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+@keyframes arrow2 {
+    from {
+        top: 405px;
+        left: 1140px;
+    }
+
+    to {
+        top: 405px;
+        left: 1040px;
+    }
+}
+
+@keyframes bg {
+    from {
+        background-position: -1300px 0;
+    }
+
+    to {
+        background-position: -1400px 0;
+    }
+}
